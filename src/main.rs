@@ -21,8 +21,6 @@ fn main() {
         Err(e) => panic!("Invalid UTF-8 sequence: {}", e),
     };
 
-    // print the parsed docker command that was sent to the system
     println!("{:?}", args);
-    // print the results of the docker command
     println!("{}", out_str);
 }
